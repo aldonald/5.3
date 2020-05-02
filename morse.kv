@@ -1,0 +1,20 @@
+
+<RelativeLayout>
+
+    TextInput:
+        id: textInput 
+        focus: True
+        pos_hint: {"center_x": .5, "center_y": 0.5}
+        size_hint: 0.5, 0.1        
+        on_text: app.count_letters()
+
+    Button:
+        text: "Show Morse Code"
+        pos_hint: {"center_x": 0.5, "center_y": 0.3}
+        on_press: app.morse_lights()
+        font_size: 32
+        color: 0, 0, 0, 1
+        background_normal: ''
+        background_color: .88, .88, .88, 1
+        size_hint: .4, .10
+
